@@ -16,8 +16,6 @@
 //Console.WriteLine($"Götgatan (antal km) + Hornsgatan (antal km) = {sum}");
 
 
-// Jag hade valt följande lösning för att fixa till koden.
-
 float gotgatan = 1.6f, hornsgatan = 2f;
 float sum = hornsgatan + gotgatan;
 Console.WriteLine($"Götgatan {gotgatan}km + Hornsgatan {hornsgatan}km = {sum}km");
