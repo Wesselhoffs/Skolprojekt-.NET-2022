@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kom igång - Skriv ut lite text", "Kom igång - Skriv ut lite text\Kom igång - Skriv ut lite text.csproj", "{63C94C06-0F2A-43CD-B5E3-B89447B77B89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C94C06-0F2A-43CD-B5E3-B89447B77B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C94C06-0F2A-43CD-B5E3-B89447B77B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C94C06-0F2A-43CD-B5E3-B89447B77B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C94C06-0F2A-43CD-B5E3-B89447B77B89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9F7A276-905A-4660-82AD-B586AF5AF2F6}
+	EndGlobalSection
+EndGlobal

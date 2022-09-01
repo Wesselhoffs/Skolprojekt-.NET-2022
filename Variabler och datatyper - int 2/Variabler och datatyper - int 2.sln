@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variabler och datatyper - int 2", "Variabler och datatyper - int 2\Variabler och datatyper - int 2.csproj", "{3BD0B9C8-8C66-4B8A-88E4-9F3140CA2F56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BD0B9C8-8C66-4B8A-88E4-9F3140CA2F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD0B9C8-8C66-4B8A-88E4-9F3140CA2F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD0B9C8-8C66-4B8A-88E4-9F3140CA2F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD0B9C8-8C66-4B8A-88E4-9F3140CA2F56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1851C1A-B0A0-457E-AD8B-8D26693279A5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variabler och datatyper - float - Mat Mats", "Variabler och datatyper - float - Mat Mats\Variabler och datatyper - float - Mat Mats.csproj", "{2C3181DC-1AE8-4FDE-9FCD-491296BF160C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C3181DC-1AE8-4FDE-9FCD-491296BF160C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3181DC-1AE8-4FDE-9FCD-491296BF160C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3181DC-1AE8-4FDE-9FCD-491296BF160C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3181DC-1AE8-4FDE-9FCD-491296BF160C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {361C537F-7220-48DB-8931-D5D63797DBF3}
+	EndGlobalSection
+EndGlobal

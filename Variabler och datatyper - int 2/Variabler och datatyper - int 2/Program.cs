@@ -1,0 +1,2 @@
+﻿int firstNumber = 12, secondNumber = 18, sum = firstNumber + secondNumber, difference = firstNumber - secondNumber;
+Console.WriteLine($"Summan utav {firstNumber} och {secondNumber} är {sum}\nOch differansen mellan {firstNumber} och {secondNumber} är {difference}");

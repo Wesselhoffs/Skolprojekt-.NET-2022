@@ -1,0 +1,2 @@
+﻿string firstNumber = "49";
+string secondNumber = "51";int firstNumberAsInt = int.Parse(firstNumber);int secondNumberAsInt = int.Parse(secondNumber);int sum = firstNumberAsInt + secondNumberAsInt;Console.WriteLine($"Summan utav {firstNumberAsInt} och {secondNumberAsInt} är {sum}\nOch är utav datatypen {sum.GetType()}");
