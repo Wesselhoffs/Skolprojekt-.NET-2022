@@ -92,7 +92,9 @@ class StyledWebsiteGenerator : WebsiteGenerator
 
     private void PrintStyledStart()
     {
-        Console.Write($"<!DOCTYPE HTML>\n<html>\n<head>\n<style>\n" +
-                      $"p {{ color: {this.color}; }}\n</style>\n</head>\n<body>\n<main>\n");
+        // Console.Write($"<!DOCTYPE HTML>\n<html>\n<head>\n<style>\n" +
+        //               $"p {{ color: {this.color}; }}\n</style>\n</head>\n<body>\n<main>\n");
+        
+        Console.Write(this.start.Insert(23, $"<head>\n<style>\np {{ color: {this.color}; }}\n</style>\n</head>\n"));
     }
 }
