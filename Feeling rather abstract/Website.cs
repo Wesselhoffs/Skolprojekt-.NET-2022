@@ -8,8 +8,8 @@ namespace Feeling_rather_abstract
 {
     abstract class Website
     {
-        protected string start;
-        protected string end;
+        protected string start = "<!DOCTYPE HTML>\n<html>\n<body>\n<main>\n";
+        protected string end = "</main>\n</body>\n</html>\n";
         protected string[] techniques, messageToClass;
         protected string className;
         public abstract void PrintWebsite();
