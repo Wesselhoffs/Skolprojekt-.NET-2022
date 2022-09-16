@@ -53,7 +53,7 @@ class WebsiteGenerator
         }
     }
 
-    protected void PrintStart()
+    virtual protected void PrintStart()
     {
         Console.Write(this.start);
     }
@@ -84,13 +84,13 @@ class StyledWebsiteGenerator : WebsiteGenerator
     }
     override public void PrintWebsite()
     {
-        PrintStyledStart();
+        PrintStart();
         PrintHeader();
         PrintCourses();
         PrintEnd();
     }
 
-    private void PrintStyledStart()
+    override protected void PrintStart()
     {
         // Console.Write($"<!DOCTYPE HTML>\n<html>\n<head>\n<style>\n" +
         //               $"p {{ color: {this.color}; }}\n</style>\n</head>\n<body>\n<main>\n");
