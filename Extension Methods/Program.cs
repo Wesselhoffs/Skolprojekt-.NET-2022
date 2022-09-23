@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using static Utilities;
-
-Console.WriteLine("Does this string have value?".HasValue());
+﻿Console.WriteLine("Does this string have value?".HasValue());
 Console.WriteLine("     ".HasValue());
 
 Console.WriteLine("One two three four five six seven eight nine ten".WordCount());
