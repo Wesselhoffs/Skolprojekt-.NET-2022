@@ -18,7 +18,6 @@ for (int i = deckOfCards.Count; i > 0; i--)
     Console.WriteLine($"Drog kortet:\t{deckOfCards[row]}");
     deckOfCards.RemoveAt(row);
 }
-Console.WriteLine("adsasd");
 void FillTheListWithCards()
 {
     for (int i = 0; i < 4; i++)
