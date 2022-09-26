@@ -7,22 +7,44 @@
 //Försök till sist beräkna hur många gånger det blir "PAR" om du gör 1000 dragningar.
 
 Dictionary<string, int> deckOfCards = new();
+Random random = new Random();
+int pairCounter = 0;
 
 FillDictionaryWithCards();
+bool parseSuccessfull = false;
+while (parseSuccessfull == false)
+{
+
+    Console.WriteLine("Hur många dragningar vill du göra?");
+    if (parseSuccessfull = int.TryParse(Console.ReadLine(), out int amountOfDraws) && amountOfDraws > 0)
+    {
+        for (int i = 0; i < amountOfDraws; i++)
+        {
+            DrawAPairAndCompare();
+        }
+        Console.WriteLine($"Du fick: {pairCounter} par på {amountOfDraws} dragningar!");
+    }
+    else
+    {
+        Console.WriteLine("Du kan bara mata in positiva heltal. Försök igen\n");
+    }
+}
+
+
 
 void FillDictionaryWithCards()
 {
     for (int i = 0; i < 4; i++)
     {
-        if (i == 0) AddCards("h");
-        else if (i == 1) AddCards("s");
-        else if (i == 2) AddCards("r");
-        else if (i == 3) AddCards("k");
+        if (i == 0) AddCardsOfThisSuite("h");
+        else if (i == 1) AddCardsOfThisSuite("s");
+        else if (i == 2) AddCardsOfThisSuite("r");
+        else if (i == 3) AddCardsOfThisSuite("k");
 
     }
 }
 
-void AddCards(string suite)
+void AddCardsOfThisSuite(string suite)
 {
     for (int x = 1; x <= 13; x++)
     {
@@ -33,4 +55,21 @@ void AddCards(string suite)
                                     .Replace("E0", "10"));
         deckOfCards.Add(card, x);
     }
+}
+
+void DrawAPairAndCompare()
+{
+    int firstRandom = random.Next(0, 52);
+    int secondRandom = random.Next(0, 52);
+    while (secondRandom == firstRandom)
+    {
+        secondRandom = random.Next(0, 52);
+    }
+
+    if (deckOfCards.ElementAt(firstRandom).Value == deckOfCards.ElementAt(secondRandom).Value)
+    {
+        Console.WriteLine($"Du fick ett par! {deckOfCards.ElementAt(firstRandom).Key} + {deckOfCards.ElementAt(secondRandom).Key}");
+        pairCounter++;
+    }
+
 }
