@@ -83,14 +83,22 @@ namespace Website_To_File
 
         virtual public void SaveWebsiteToFile()
         {
-            FileInfo fi = new(@"Website.html");
-            FileStream fs = fi.Open(FileMode.Create, FileAccess.ReadWrite, FileShare.Read);
-            StreamWriter sw = new(fs);
-            Console.SetOut(sw);
-            PrintWebsite();
-            Console.SetOut(Console.Out);
-            sw.Close();
-            fs.Close();
+            try
+            {
+                FileInfo fi = new(@"Website.html");
+                FileStream fs = fi.Open(FileMode.Create, FileAccess.ReadWrite, FileShare.Read);
+                StreamWriter sw = new(fs);
+                Console.SetOut(sw);
+                PrintWebsite();
+                Console.SetOut(Console.Out);
+                sw.Close();
+                fs.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
         }
     }
 }
