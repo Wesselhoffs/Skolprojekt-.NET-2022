@@ -98,7 +98,6 @@ namespace Website_To_File
             {
                 Console.WriteLine(e.Message);
             }
-
         }
     }
 }
