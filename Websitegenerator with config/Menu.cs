@@ -9,7 +9,6 @@
             bool displayError = false;
             do
             {
-                Console.SetOut(Console.Out);
                 Console.Clear();
                 Console.Write($"\n" +
                               $"       WEBSITE GENERATOR  \n" +
@@ -43,23 +42,29 @@
                     {
                         case "1":
                             Console.Clear();
+                            myWebsite.UpdateValues(myConfig);
                             myWebsite.PrintWebsite();
                             Console.WriteLine("\n\nPress any key to return to the menu.");
                             Console.ReadKey(true);
                             break;
                         case "2":
                             Console.Clear();
+                            styledWebsite.UpdateValues(myConfig);
                             styledWebsite.PrintWebsite();
                             Console.WriteLine("\n\nPress any key to return to the menu.");
                             Console.ReadKey(true);
                             break;
                         case "3":
+                            Console.Clear();
+                            myWebsite.UpdateValues(myConfig);
                             myWebsite.SaveWebsiteToFile();
                             Console.WriteLine("\n\nOrdinary website saved with filename \"Website.html\"!" +
                                               "\nPress any key to return to the menu.");
                             Console.ReadKey(true);
                             break;
                         case "4":
+                            Console.Clear();
+                            styledWebsite.UpdateValues(myConfig);
                             styledWebsite.SaveWebsiteToFile();
                             Console.WriteLine("\n\nOrdinary website saved with filename \"StyledWebsite.html\"!" +
                                               "\nPress any key to return to the menu.");
@@ -71,7 +76,7 @@
                             Console.WriteLine("\n\nPress any key to return to the menu.");
                             Console.ReadKey(true);
                             break;
-                        case "6": ChangeConfig(); break;
+                        case "6": ChangeConfig(myConfig); break;
                         case "7": Environment.Exit(0); break;
                         default: displayError = true; break;
                     }
@@ -82,7 +87,6 @@
 
         private static void PreviewConfig(WebsiteConfig myConfig)
         {
-            // (string[] msgToClass, string[] courses, string className, string color)
             Console.WriteLine($"Classname\n-----------------\n{myConfig.GetClassNameFromConfig()}");
             Console.WriteLine($"\n\nMessages to class\n-----------------");
             if (myConfig.GetMessagesFromConfig() != null && myConfig.GetMessagesFromConfig().Any())
@@ -111,9 +115,9 @@
             Console.WriteLine($"\n\nColor\n---------\n{myConfig.GetColorFromConfig()}");
         }
 
-        private static void ChangeConfig()
+        private static void ChangeConfig(WebsiteConfig myConfig)
         {
-            
+            myConfig.SetClassNameInConfig("Test 123");
         }
         private static void WriteOutError()
         {

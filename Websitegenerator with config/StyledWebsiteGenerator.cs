@@ -9,7 +9,13 @@ namespace Website_With_Config
         {
             this.color = config.GetColorFromConfig();
         }
-
+        public override void UpdateValues(WebsiteConfig config)
+        {
+            this.className = config.GetClassNameFromConfig();
+            this.messageToClass = config.GetMessagesFromConfig();
+            this.courses = FixArray(config.GetCoursesFromConfig());
+            this.color = config.GetColorFromConfig();
+        }
 
         override public void PrintWebsite()
         {

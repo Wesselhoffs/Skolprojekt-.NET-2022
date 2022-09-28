@@ -15,7 +15,13 @@ namespace Website_With_Config
             this.messageToClass = config.GetMessagesFromConfig();
             this.courses = FixArray(config.GetCoursesFromConfig());
         }
+        public virtual void UpdateValues(WebsiteConfig config)
+        {
+            this.className = config.GetClassNameFromConfig();
+            this.messageToClass = config.GetMessagesFromConfig();
+            this.courses = FixArray(config.GetCoursesFromConfig());
 
+        }
         public virtual void PrintWebsite()
         {
             PrintStart();
