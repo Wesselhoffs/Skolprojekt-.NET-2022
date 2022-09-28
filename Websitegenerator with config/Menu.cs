@@ -87,12 +87,12 @@
 
         private static void PreviewConfig(WebsiteConfig myConfig)
         {
-            Console.WriteLine($"Classname\n-----------------\n{myConfig.GetClassNameFromConfig()}");
+            Console.WriteLine($"Classname\n-----------------\n{myConfig.GetClassName()}");
             Console.WriteLine($"\n\nMessages to class\n-----------------");
-            if (myConfig.GetMessagesFromConfig() != null && myConfig.GetMessagesFromConfig().Any())
+            if (myConfig.GetMessages() != null && myConfig.GetMessages().Any())
             {
                 int counter = 0;
-                foreach (string msg in myConfig.GetMessagesFromConfig())
+                foreach (string msg in myConfig.GetMessages())
                 {
                     if (!string.IsNullOrWhiteSpace(msg))
                     {
@@ -101,10 +101,10 @@
                 }
             }
             Console.WriteLine($"\n\nCourses\n-----------------");
-            if (myConfig.GetCoursesFromConfig() != null && myConfig.GetCoursesFromConfig().Any())
+            if (myConfig.GetCourses() != null && myConfig.GetCourses().Any())
             {
                 int counter = 0;
-                foreach (string course in myConfig.GetCoursesFromConfig())
+                foreach (string course in myConfig.GetCourses())
                 {
                     if (!string.IsNullOrWhiteSpace(course))
                     {
@@ -112,12 +112,12 @@
                     }
                 }
             }
-            Console.WriteLine($"\n\nColor\n---------\n{myConfig.GetColorFromConfig()}");
+            Console.WriteLine($"\n\nColor\n---------\n{myConfig.GetColor()}");
         }
 
         private static void ChangeConfig(WebsiteConfig myConfig)
         {
-            myConfig.SetClassNameInConfig("Test 123");
+            myConfig.SetClassName("Test 123");
         }
         private static void WriteOutError()
         {

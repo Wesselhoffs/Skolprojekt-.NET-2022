@@ -1,20 +1,19 @@
-﻿using static Website_With_Config.WebsiteConfig;
-namespace Website_With_Config
+﻿namespace Website_With_Config
 {
-    class StyledWebsiteGenerator : WebsiteGenerator
+    class StyledWebsiteGenerator : WebsiteGenerator, IWebsiteGenerator
     {
         private string color;
 
         public StyledWebsiteGenerator(WebsiteConfig config ) : base(config)
         {
-            this.color = config.GetColorFromConfig();
+            this.color = config.GetColor();
         }
         public override void UpdateValues(WebsiteConfig config)
         {
-            this.className = config.GetClassNameFromConfig();
-            this.messageToClass = config.GetMessagesFromConfig();
-            this.courses = FixArray(config.GetCoursesFromConfig());
-            this.color = config.GetColorFromConfig();
+            this.className = config.GetClassName();
+            this.messageToClass = config.GetMessages();
+            this.courses = FixArray(config.GetCourses());
+            this.color = config.GetColor();
         }
 
         override public void PrintWebsite()

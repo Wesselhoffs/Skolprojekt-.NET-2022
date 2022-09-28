@@ -2,9 +2,13 @@
 {
     internal interface IWebsiteConfig
     {
-        string[] GetMessagesFromConfig();
-        string[] GetCoursesFromConfig();
-        string GetColorFromConfig();
-        string GetClassNameFromConfig();
+        string[] GetMessages();
+        void SetMessages(string[] messages);
+        string[] GetCourses();
+        void SetCourses(string[] courses);
+        string GetColor();
+        void SetColor(string color);
+        string GetClassName();
+        void SetClassName(string className);
     }
 }

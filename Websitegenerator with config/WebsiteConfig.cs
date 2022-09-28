@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace Website_With_Config
+﻿namespace Website_With_Config
 {
     class WebsiteConfig : IWebsiteConfig
 
@@ -24,28 +22,40 @@ namespace Website_With_Config
         }
 
 
-        public string GetClassNameFromConfig()
+        public string GetClassName()
         {
             return ClassName;
         }
-        public void SetClassNameInConfig(string className)
+        public void SetClassName(string className)
         {
             this.ClassName = className;
         }
 
-        public string GetColorFromConfig()
+        public string GetColor()
         {
             return Color;
         }
+        public void SetColor(string color)
+        {
+            this.Color = color;
+        }
 
-        public string[] GetCoursesFromConfig()
+        public string[] GetCourses()
         {
             return Courses;
         }
+        public void SetCourses(string[] courses)
+        {
+            this.Courses = courses;
+        }
 
-        public string[] GetMessagesFromConfig()
+        public string[] GetMessages()
         {
             return MessagesToClass;
+        }
+        public void SetMessages(string[] messages)
+        {
+            this.MessagesToClass = messages;
         }
     }
 }

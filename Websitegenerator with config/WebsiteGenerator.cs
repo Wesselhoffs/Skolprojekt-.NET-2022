@@ -1,5 +1,4 @@
-﻿using static Website_With_Config.WebsiteConfig;
-namespace Website_With_Config
+﻿namespace Website_With_Config
 {
     class WebsiteGenerator : IWebsiteGenerator
     {
@@ -11,15 +10,15 @@ namespace Website_With_Config
 
         public WebsiteGenerator(WebsiteConfig config)
         {
-            this.className = config.GetClassNameFromConfig();
-            this.messageToClass = config.GetMessagesFromConfig();
-            this.courses = FixArray(config.GetCoursesFromConfig());
+            this.className = config.GetClassName();
+            this.messageToClass = config.GetMessages();
+            this.courses = FixArray(config.GetCourses());
         }
         public virtual void UpdateValues(WebsiteConfig config)
         {
-            this.className = config.GetClassNameFromConfig();
-            this.messageToClass = config.GetMessagesFromConfig();
-            this.courses = FixArray(config.GetCoursesFromConfig());
+            this.className = config.GetClassName();
+            this.messageToClass = config.GetMessages();
+            this.courses = FixArray(config.GetCourses());
 
         }
         public virtual void PrintWebsite()
