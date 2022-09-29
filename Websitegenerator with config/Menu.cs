@@ -115,9 +115,9 @@
             Console.WriteLine($"\n\nColor\n---------\n{myConfig.GetColor()}");
         }
 
-        private static void ChangeConfig(WebsiteConfig myConfig)  // Implement this next
+        private static void ChangeConfig(WebsiteConfig myConfig)
         {
-            myConfig.SetClassName("Test 123");
+            Console.Write($"New classname: ");
         }
         private static void WriteOutError()
         {
