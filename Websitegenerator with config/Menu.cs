@@ -118,6 +118,7 @@
         private static void ChangeConfig(WebsiteConfig myConfig)
         {
             Console.Write($"New classname: ");
+            string newClassname = Console.ReadLine();
         }
         private static void WriteOutError()
         {
