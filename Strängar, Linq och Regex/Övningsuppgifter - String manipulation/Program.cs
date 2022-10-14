@@ -105,3 +105,36 @@ else
 string genre1 = "Jazz";
 string genre2 = "Pop";
 //Skriv en if-sats som skriver ut om textsträngarna är lika eller inte.
+if (String.Equals(genre1, genre2))
+{
+    Console.WriteLine($"{genre1} och {genre2} är lika. String.Equals");
+}
+else
+{
+    Console.WriteLine($"{genre1} och {genre2} är INTE lika. String.Equals");
+}
+
+
+
+//9.
+//Använd StringComparer för att undersöka på vilken plats i sorteringsordningen
+//respektive genre hamnar.
+//Använd följande kod:
+string genre9_1 = "Pop";
+string genre9_2 = "Rock";
+//Skriv en if-sats som skriver ut vilken genre som hamnar före vilken.
+//Output:
+//Pop hamnar före Rock
+StringComparer comparer = StringComparer.OrdinalIgnoreCase;
+if (comparer.Compare(genre9_1,genre9_2) < 0)
+{
+    Console.WriteLine($"{genre9_1} kommer före {genre9_2} i bokstavsordning. StringComparer");
+}
+else if (comparer.Compare(genre9_1, genre9_2) > 0)
+{
+    Console.WriteLine($"{genre9_2} kommer före {genre9_1} i bokstavsordning. StringComparer");
+}
+else
+{
+    Console.WriteLine($"{genre9_1} och {genre9_2} är likadana. StringComparer");
+}
