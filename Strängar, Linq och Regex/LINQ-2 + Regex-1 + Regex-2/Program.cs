@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics.Metrics;
 using System.Net.Http.Json;
+using System.Net.Mail;
 using System.Text.RegularExpressions;
 
 var catHotel = new List<Room>() { new Room(new Cat("Pelle Svanslös", 2), 1), new Room(new Cat("Skorpan", 1), 2), new Room(new Cat("Sir MjausAlot", 5), 3) };
@@ -31,6 +32,31 @@ var numbersQuery = numbers.Where(n => n > 30).ToList();
 
 Console.WriteLine($"Numbers above 30: {numbersQuery.Count}\nMax number: {numbersQuery.Max()}\nMin number: {numbersQuery.Min()}\nSum of all numbers above 30: {numbersQuery.Sum()}");
 Console.WriteLine(numbersQuery.Aggregate(0,(sum, next) => sum += next));
+
+
+
+//Uppgift - Reguljära uttryck(IsMatch)
+//Använd IsMatch-metoden för att validera följande:
+//Mobilnummer inkusive +46 (t.ex. +46XXXXXXXXX).
+//E - postadressen info @matmats.se.
+//Webbadressen www.matmats.se.
+//Skriv ut resultatet med hjälp av WriteLine-metoden.
+//Exempel (output):
+//Mobilnummer: True
+//E-postadress: True
+//Webbadress: True
+string testNumber = "+46123456789";
+string testEmail = "info@matmats.se";
+string testWebsite = "www.matmats.se";
+
+Regex validNumber = new Regex(@"\+46\d+");
+Regex validEmail = new Regex(@"^[a-zA-Z]\w*@\w+\.[a-zA-Z]{2,}$");
+Regex validWebsite = new Regex(@"www.\w+.se");
+
+Console.WriteLine(validNumber.IsMatch(testNumber));
+Console.WriteLine(validEmail.IsMatch(testEmail));
+Console.WriteLine(validWebsite.IsMatch(testWebsite));
+
 
 
 
