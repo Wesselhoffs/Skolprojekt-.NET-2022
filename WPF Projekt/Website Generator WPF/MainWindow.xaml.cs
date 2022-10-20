@@ -24,7 +24,6 @@ namespace Website_Generator_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        StyledWebsiteGenerator website;
         public MainWindow()
         {
             InitializeComponent();
