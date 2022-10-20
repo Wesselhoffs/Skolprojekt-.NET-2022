@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website Generator WPF", "Website Generator WPF.csproj", "{8DFA0624-4D10-4CDD-A675-BDF70BDE2D42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DFA0624-4D10-4CDD-A675-BDF70BDE2D42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DFA0624-4D10-4CDD-A675-BDF70BDE2D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DFA0624-4D10-4CDD-A675-BDF70BDE2D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DFA0624-4D10-4CDD-A675-BDF70BDE2D42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A93E10C-C929-4D39-BE1C-4052A0BCB5C5}
+	EndGlobalSection
+EndGlobal
