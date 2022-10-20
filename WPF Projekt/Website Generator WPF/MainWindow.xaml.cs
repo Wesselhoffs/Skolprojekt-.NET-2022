@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +37,19 @@ namespace Website_Generator_WPF
         private void show_StyledWebsite_Click(object sender, RoutedEventArgs e)
         {
             Website_TextBlock.Text = GetStyledText();
+        }
+        private void Save_Website_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+            dlg.FileName = "Document"; // Default file name
+            dlg.DefaultExt = ".html"; // Default file extension
+            dlg.Filter = "Text documents (.html)|*.html"; // Filter files by ex
+                                                        // Show save file dialog box
+            Nullable<bool> result = dlg.ShowDialog();
+
+
+            File.WriteAllText(dlg.FileName, Website_TextBlock.Text);
+
         }
 
         private string GetStyledText()

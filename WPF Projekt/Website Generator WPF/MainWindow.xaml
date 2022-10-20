@@ -20,6 +20,8 @@
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="10">
             <Button x:Name="show_Website" Content="Visa Hemsida" Width="120" Margin="0,50,0,0" Click="show_Website_Click"/>
             <Button x:Name="show_StyledWebsite" Content="Visa Stylad Hemsida" Width="120" Margin="0,50,0,0" Click="show_StyledWebsite_Click"/>
+            <Button x:Name="Save_Website" Content="Spara Hemsida" Width="120" Margin="0,50,0,0" Click="Save_Website_Click"/>
+
         </StackPanel>
     </Grid>
 </Window>
