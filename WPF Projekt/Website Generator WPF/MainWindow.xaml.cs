@@ -24,6 +24,7 @@ namespace Website_Generator_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -43,7 +44,7 @@ namespace Website_Generator_WPF
             dlg.FileName = "Document"; // Default file name
             dlg.DefaultExt = ".html"; // Default file extension
             dlg.Filter = "Text documents (.html)|*.html"; // Filter files by ex
-                                                       
+
             Nullable<bool> result = dlg.ShowDialog(); // Show save file dialog box
 
 
@@ -56,12 +57,12 @@ namespace Website_Generator_WPF
             open.FileName = "Document"; // Default file name
             open.DefaultExt = ".html"; // Default file extension
             open.Filter = "Text documents (.html)|*.html"; // Filter files by ex
-                                                           
+
 
             Nullable<bool> result = open.ShowDialog();// Show save file dialog box
 
             string temp = File.ReadAllText(open.FileName);
-            Website_TextBlock.Text=temp;
+            Website_TextBlock.Text = temp;
 
         }
 
