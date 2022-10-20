@@ -51,6 +51,20 @@ namespace Website_Generator_WPF
             File.WriteAllText(dlg.FileName, Website_TextBlock.Text);
 
         }
+        private void Load_Website_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.FileName = "Document"; // Default file name
+            open.DefaultExt = ".html"; // Default file extension
+            open.Filter = "Text documents (.html)|*.html"; // Filter files by ex
+                                                           // Show save file dialog box
+
+            Nullable<bool> result = open.ShowDialog();
+
+            string temp = File.ReadAllText(open.FileName);
+            Website_TextBlock.Text=temp;
+
+        }
 
         private string GetStyledText()
         {

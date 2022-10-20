@@ -16,12 +16,12 @@
             <RowDefinition Height = "*"/>
         </Grid.RowDefinitions>
         <Label Content="Hemside Generator" Grid.Row="0" FontSize="30" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-        <TextBlock x:Name="Website_TextBlock" TextWrapping="WrapWithOverflow" Text= "" Grid.Column="0" Grid.Row="1" Margin="10"/>
+        <TextBox x:Name="Website_TextBlock" TextWrapping="WrapWithOverflow" Text= "" Grid.Column="0" Grid.Row="1" Margin="10"/>
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="10">
             <Button x:Name="show_Website" Content="Visa Hemsida" Width="120" Margin="0,50,0,0" Click="show_Website_Click"/>
             <Button x:Name="show_StyledWebsite" Content="Visa Stylad Hemsida" Width="120" Margin="0,50,0,0" Click="show_StyledWebsite_Click"/>
             <Button x:Name="Save_Website" Content="Spara Hemsida" Width="120" Margin="0,50,0,0" Click="Save_Website_Click"/>
-
+            <Button x:Name="Load_Website" Content="Ladda Hemsida" Width="120" Margin="0,50,0,0" Click="Load_Website_Click" />
         </StackPanel>
     </Grid>
 </Window>
